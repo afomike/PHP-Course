@@ -14,7 +14,16 @@ echo define ('STATUS_PAID') ? 'Constant is defined' : 'Constant is not defined';
 Const STATUS_PENDING = 0;
 Const STATUS_APPROVED = 1;
 
-// magic constant
+// runtime constant
+define("STATUS_REJECTED", 2);
+
+if (true) {
+    define("STATUS_CANCELLED", 3);
+
+    //const STATUS_ON_HOLD = 4; // This will cause an error because const cannot be defined inside a block
+}
+
+// magic constant there values change depending on where they are used
 echo __LINE__;
 //  predifined constant
 echo PHP_VERSION;
