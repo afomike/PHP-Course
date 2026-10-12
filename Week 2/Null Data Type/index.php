@@ -31,3 +31,4 @@ var_dump((string)$nullValue); // Outputs: string(0) ""
 var_dump((bool)$nullValue); // Outputs: bool(false)
 
 // use case of null
+$defaultName = null;
