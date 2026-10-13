@@ -32,3 +32,9 @@ var_dump((bool)$nullValue); // Outputs: bool(false)
 
 // use case of null
 $defaultName = null;
+
+// Checking if a variable is null before using it
+if (is_null($defaultName)) {
+    echo "The variable is null, assigning a default value.";
+    $defaultName = "John Doe"; // Assigning a default value
+}   
