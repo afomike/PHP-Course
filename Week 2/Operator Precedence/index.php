@@ -18,6 +18,7 @@ echo $var4; // Outputs: 1 - Parentheses force multiplication to be performed fir
 $var5 = true;
 $var6 = false;
 
+
 var_dump($var5 && $var6); // Outputs: bool(false) - Logical AND operator (&&) has higher precedence than Logical OR operator (||)
 var_dump($var5 || $var6); // Outputs: bool(true) - Logical OR
 
