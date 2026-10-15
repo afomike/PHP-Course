@@ -110,12 +110,15 @@ var_dump($d << $v);
 
 
 // Array operators are used to perform operations on arrays, such as union, equality, and identity.
-$array = ['A', 'B', 'C']
-$array2 = ['E', 'O', 'F' ]
+$array = ['A', 'B', 'C'];
 
-$array_Con = $array + $array2
+$array2 = ['E', 'O', 'F' ];
+
+
+$array_Con = $array + $array2;
 // Array dont overide 
-print_r($array_Con)
+
+print_r($array_Con);
 
 // Execution operators are used to execute external programs or commands from within a PHP script.
 
