@@ -65,3 +65,10 @@ $colors = array("red", "green", "blue");
 foreach ($colors as $color) {
     echo "The color is: $color\n";
 }
+
+// foreach loop for iterating over an associative array
+$person = array("name" => "John", "age" => 30, "
+city" => "New York");
+foreach ($person as $key => $value) {
+    echo "The $key is: $value\n";
+}
