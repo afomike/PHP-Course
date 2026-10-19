@@ -9,12 +9,9 @@ function greet() {
 // Function Call
 echo greet() . "\n";
 
-// Function with Parameters
-function add($a, $b) {
+// function hinting
+function addNumbers(int $a, int $b): int {
     return $a + $b;
-}   
+}
 
-// Function Call with Parameters
-$result = add(5, 10);
-echo "The sum is: $result\n";
-
+echo addNumbers(5, 10) . "\n";
