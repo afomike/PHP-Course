@@ -65,3 +65,20 @@ echo foo3(1, 2, 3, 4, 5) . "\n"; // Output: 15
 // spread operator can also be used to unpack an array into individual arguments when calling a functions
 $myNumbers = [1, 2, 3, 4, 5];
 echo foo3(...$myNumbers) . "\n"; // Output: 15
+
+// order of parameters in a function is important, as it determines how the arguments are matched to the parameters when the function is called. The order of parameters should be consistent with the order of arguments passed to the function, and any default parameter values should be placed after required parameters to avoid ambiguity.
+
+function foo4(int|float $x, int|float $y = 10): int|float {
+    return $x * $y;
+}
+
+// Function Call with Arguments
+echo foo4(5) . "\n"; // Output: 50 (uses default value of $y = 10)
+
+// Function Call with Arguments
+echo foo4(5, 2) . "\n"; // Output: 10 (overrides default value of $y with 2)
+
+// naming arguments in a function call allows you to specify which parameter each argument corresponds to, regardless of their order in the function declaration. This can improve code readability and make it easier to understand the purpose of each argument.
+function foo5(int|float $x, int|float $y, int|float $z): int|float {
+    return $x + $y + $z;
+}       
