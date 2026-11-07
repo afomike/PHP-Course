@@ -46,7 +46,7 @@ $numbers = [1, 2, 3, 4, 5];
 
 $doubled = array_map(fn($number) => $number * 2, $numbers);
 
-each($doubled as $value) {
+foreach ($doubled as $value) {
     echo $value . "<br/>"; // Output: 2, 4, 6, 8, 10
 }
 
